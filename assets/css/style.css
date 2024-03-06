@@ -1,7 +1,38 @@
-/* body {
-  background-color: black;
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
 }
 
-h1 {
-  color: white;
-} */
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+.text-wrap.fs-6.fw-bold {
+  /* Suas propriedades de estilo aqui */
+  margin-left: 7px;
+}
+
+.active {
+  background-color: white !important;
+  width: 120% !important;
+  border-radius: 10vw !important;
+  color: #f3336c !important;
+}
+
+.nav {
+  color: black !important;
+}
+
+h4.font-monospace {
+  margin-left: 10px;
+}
