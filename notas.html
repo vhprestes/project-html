@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="assets/js/app.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- left menu / dashboard -->
+<div class="dashboard">
+<div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100vh; background-color:#f3336c;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-4">Accusoft</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a href="/index.html" class="nav-link text-white" >
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+        Dashboard
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link active">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+        Notas emitidas
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+<!-- header -->
+
+<header class="p-3 mb-3 border-bottom" style="width: 100%; height: 20%; display: inline-flex; margin-right: 0; margin-left: 10px; justify-content: space-between"">
+    <div class="d-flex flex-wrap align-items-center">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <h4 class="font-monospace">Dashboard</h4>
+
+    </div>
+      
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Search here" aria-label="Search">
+      </form>
+
+      <div class="dropdown text-end" style="justify-content: flex-end; display: flex;">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle justify-content-lg-start profilePic">
+        </a>
+        <div class="profile""> 
+        <p class="fs-5 fw-bold profileText">Jonny</p>
+        <p class="fs-6 fw-lighter profileText">Super Admin</p>
+        </div>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+</header>
+
+
+<!-- TODO: tabelas com listagem das notas
+Informações necessárias:
+■ Nome do pagador;
+■ Número de identificação da nota;
+■ Data de emissão da nota;
+■ Data da cobrança;
+1
+■ Data do pagamento;
+■ Valor da nota;
+■ Documento da nota fiscal;
+■ Documento do boleto bancário;
+■ Status da nota;
+● Emitida;
+● Cobrança realizada;
+● Pagamento em atraso;
+● Pagamento realizado;
+○ Filtros necessários:
+■ Filtrar por mês de emissão da nota;
+■ Filtrar pelo mês que a cobrança foi realizada:
+■ Filtrar pelo mês que o pagamento foi realizado:
+■ Filtrar pelo status da nota; -->
+
+
+<!-- Tabelas com listagem das notas -->
+<div class="table-notas">
+<table>
+  <thead>
+    <tr>
+      <th>Nome do pagador</th>
+      <th>Número de identificação da nota</th>
+      <th>Data de emissão da nota</th>
+      <th>Data da cobrança</th>
+      <th>Data do pagamento</th>
+      <th>Valor da nota</th>
+      <th>Documento da nota fiscal</th>
+      <th>Documento do boleto bancário</th>
+      <th>Status da nota</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- TODO: Add rows with data here -->
+  </tbody>
+</table>
+
+<!-- Filtros -->
+<div>
+  <label for="month-emission">Filtrar por mês de emissão da nota:</label>
+  <select id="month-emission">
+    <!-- TODO: Add options for months here -->
+  </select>
+</div>
+
+<div>
+  <label for="month-charge">Filtrar pelo mês que a cobrança foi realizada:</label>
+  <select id="month-charge">
+    <!-- TODO: Add options for months here -->
+  </select>
+</div>
+
+<div>
+  <label for="month-payment">Filtrar pelo mês que o pagamento foi realizado:</label>
+  <select id="month-payment">
+    <!-- TODO: Add options for months here -->
+  </select>
+</div>
+
+<div>
+  <label for="status">Filtrar pelo status da nota:</label>
+  <select id="status">
+    <option value="emitida">Emitida</option>
+    <option value="cobranca">Cobrança realizada</option>
+    <option value="atraso">Pagamento em atraso</option>
+    <option value="realizado">Pagamento realizado</option>
+  </select>
+</div>
+</div>
+
+
+
+</body>
+</html>
