@@ -10,6 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </head>
+<body>
+
+<!-- left menu / dashboard -->
+<div class="dashboard">
 <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100vh; background-color:#f3336c;">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
     <span class="fs-4">Accusoft</span>
@@ -23,45 +27,17 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-white">
+      <a href="/notas.html" class="nav-link text-white">
         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-        Customers
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-white">
-        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-        Projects
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-white">
-        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-        Orders
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-white">
-        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-        Inventory
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-white">
-        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-        Accounts
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-white">
-        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-        Tasks
+        Notas emitidas
       </a>
     </li>
   </ul>
 </div>
+</div>
 
 
+<!-- header -->
 
 <header class="p-3 mb-3 border-bottom" style="width: 100%; height: 20%; display: inline-flex; margin-right: 0; margin-left: 10px; justify-content: space-between"">
     <div class="d-flex flex-wrap align-items-center">
@@ -75,15 +51,17 @@
     </div>
       
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <input type="search" class="form-control" placeholder="Search here" aria-label="Search">
       </form>
 
       <div class="dropdown text-end" style="justify-content: flex-end; display: flex;">
         <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle justify-content-lg-start">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle justify-content-lg-start profilePic">
         </a>
-        <p class="text-wrap fs-6 fw-bold">Jonny</p>
-
+        <div class="profile""> 
+        <p class="fs-5 fw-bold profileText">Jonny</p>
+        <p class="fs-6 fw-lighter profileText">Super Admin</p>
+        </div>
         <ul class="dropdown-menu text-small">
           <li><a class="dropdown-item" href="#">Settings</a></li>
           <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -94,7 +72,20 @@
 </header>
 
 
+<!-- TODO: Dashboard com Indicadores: indicadores com opções de filtro por mês, trimestre e
+ano. As seguintes informações devem ser mostradas no dashboard:
+○ Valor total das notas emitidas;
+○ Valor total das notas emitidas, mas sem ter a cobrança feita;
+○ Valor total das notas vencidas - Inadimplência;
+○ Valor total das notas a vencer;
+○ Valor total das notas pagas;
+○ Gráfico de evolução da inadimplência mês a mês;
+○ Gráfico de evolução da receita recebida mês a mês-->
 
-<body>
+
+
+
+
+
 </body>
 </html>
