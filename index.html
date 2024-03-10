@@ -115,9 +115,9 @@ ano. As seguintes informações devem ser mostradas no dashboard:
       <tr>
         <td>Aaron Rodgers</td>
         <td>123457</td>
-        <td>01/04/2023</td>
-        <td>01/05/2023</td>
-        <td>01/06/2023</td>
+        <td>01/01/2023</td>
+        <td>10/01/2023</td>
+        <td>01/02/2023</td>
         <td>R$ 3000,00</td>
         <td>123457</td>
         <td>123457</td>
@@ -158,6 +158,8 @@ ano. As seguintes informações devem ser mostradas no dashboard:
         <td>123460</td>
         <td>123460</td>
         <td>Emitida</td>
+
+      </tr>
     </tbody>
   </table>
 
@@ -197,12 +199,22 @@ ano. As seguintes informações devem ser mostradas no dashboard:
       <h6>Valor total das notas pagas</h6>
       <p>R$ 2000,00</p>
     </div>
+    <br
+    <br>
 
     <div class="grafico-inadimplencia">
       <h6>Gráfico de evolução da inadimplência mês a mês</h6>
-      <img src="https://via.placeholder.com/150" alt="grafico-inadimplencia">
+      <canvas id="chart-inadimplencia"></canvas>
+      <br>
+
+<br>
+      <div class="grafico-receita">
+        <h6>Gráfico de evolução da receita recebida mês a mês</h6>
+        <canvas id="chart-receita"></canvas>
+      </div>
 
 </div>
+
 
 
 </body>
