@@ -49,3 +49,30 @@ function filterEmissao(month) {
     }
   }
 }
+
+const monthCobrancaSelected = document.getElementById('month-charge');
+
+monthCobrancaSelected.addEventListener('change', function() {
+  const value = this.value;
+  console.log('Mês de cobrança: ', value);
+  filterCobranca(value);
+}
+);
+
+function filterCobranca(month) {
+  const table = document.getElementsByClassName('table-notas')[0];
+  const rows = table.getElementsByTagName('tr');
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const columns = row.getElementsByTagName('td');
+    const column = columns[3];
+    if (column) {
+      const text = column.textContent || column.innerText;
+      const monthFromText = text.split('/')[1];
+      if (monthFromText == month) {
+      } else {
+        row.style.display = 'none';
+      }
+    }
+  }
+}
