@@ -14,7 +14,7 @@
 
 <!-- left menu / dashboard -->
 <div class="dashboard">
-<div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100vh; background-color:#f3336c;">
+<div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100%; background-color:#f3336c;">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
     <span class="fs-4">Accusoft</span>
   </a>
@@ -117,7 +117,7 @@ ano. As seguintes informações devem ser mostradas no dashboard:
         <td>01/04/2023</td>
         <td>01/05/2023</td>
         <td>01/06/2023</td>
-        <td>R$ 2000,00</td>
+        <td>R$ 3000,00</td>
         <td>123457</td>
         <td>123457</td>
         <td>Pagamento em atraso</td>
@@ -152,40 +152,54 @@ ano. As seguintes informações devem ser mostradas no dashboard:
         <td>123460</td>
         <td>01/10/2023</td>
         <td>01/11/2023</td>
-        <td>01/03/2023</td>
-        <td>R$ 2000,00</td>
+        <td>01/12/2023</td>
+        <td>R$ 1200,00</td>
         <td>123460</td>
         <td>123460</td>
-        <td>Pagamento em Atraso</td>
+        <td>Emitida</td>
     </tbody>
   </table>
 
 
 
+  <!-- Filtro por trimestre -->
+  <div class="filtro-trimestre">
+    <label for="trimestre">Exibindo resultados para o ano, mas você pode filtrar por trimestre:</label>
+    <select name="trimestre" id="trimestre">
+      <option value="0">Selecione um trimestre</option>
+      <option value="1">1º trimestre</option>
+      <option value="2">2º trimestre</option>
+      <option value="3">3º trimestre</option>
+      <option value="4">4º trimestre</option>
+    </select>
+
 <!-- Indicadores -->
 
   <div class="indicadores-container">
-    <div class="indicador">
+    <div class="indicador-total-notas">
       <h6>Valor total das notas emitidas</h6>
       <p>R$ 7800,00</p>
     </div>
-    <div class="indicador">
+    <div class="indicador-emitidas-sem-cobranca">
       <h6>Valor total das notas emitidas, mas sem ter a cobrança feita</h6>
       <p>R$ 2000,00</p>
     </div>
-    <div class="indicador">
+    <div class="indicador-vencidas">
       <h6>Valor total das notas vencidas - Inadimplência</h6>
       <p>R$ 2000,00</p>
     </div>
-    <div class="indicador">
+    <div class="indicador-a-vencer">
       <h6>Valor total das notas a vencer</h6>
       <p>R$ 2000,00</p>
     </div>
-    <div class="indicador">
+    <div class="indicador-pagas">
       <h6>Valor total das notas pagas</h6>
       <p>R$ 2000,00</p>
     </div>
 
+    <div class="grafico-inadimplencia">
+      <h6>Gráfico de evolução da inadimplência mês a mês</h6>
+      <img src="https://via.placeholder.com/150" alt="grafico-inadimplencia">
 
 </div>
 
