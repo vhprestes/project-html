@@ -25,6 +25,8 @@ header {
   position: fixed;
   left: 25%;
   top: 0%;
+  z-index: 1000;
+  background-color: white;
 }
 
 
@@ -71,6 +73,7 @@ h4.font-monospace {
 .table-notas {
   display: block;
   width: 100%;
+  margin-left: 10%S;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically (optional) */
 }
@@ -91,4 +94,8 @@ h4.font-monospace {
 .filters {
   margin-top: 10px;
   margin-left: 5%;
+}
+
+.filtro-trimestre {
+  margin-left: 2% !important;
 }
