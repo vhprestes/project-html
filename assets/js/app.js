@@ -4,23 +4,12 @@ window.onload = function() {
 
 
 /* TODO:
-Cada nota ira conter:
-Informações necessárias:
-■ Nome do pagador;
-■ Número de identificação da nota;
-■ Data de emissão da nota;
-■ Data da cobrança;
-1
-■ Data do pagamento;
-■ Valor da nota;
-■ Documento da nota fiscal;
-■ Documento do boleto bancário;
-■ Status da nota;
-● Emitida;
-● Cobrança realizada;
-● Pagamento em atraso;
-
-É necessario: Adicionar uma nota, fiultrar por mes de emissao, pelo mes que a cobrança foi realizada, pelo mes que o pagamento foi realizado, status da nota
+  1. Adicionar um evento de click no botão de adicionar nota
+  2. Ao clicar no botão de adicionar nota, abrir um modal com um formulário para adicionar uma nova nota
+  3. Adicionar um evento de click no botão de salvar nota
+  4. Ao clicar no botão de salvar nota, pegar os valores dos inputs e adicionar uma nova linha na tabela de notas
+  5. As notas serão persistidas no localStorage
+  6. As funções de filtragem estão muito parecidas, talvez não seja necessário repetir tanto código
 */
 
 const monthEmissaoSelected = document.getElementById('month-emission');
