@@ -101,3 +101,29 @@ function filterPayment(month) {
     }
   }
 }
+
+
+const statusSelected = document.getElementById('status');
+statusSelected.addEventListener('change', function() {
+  const value = this.value;
+  console.log('Status selecionado: ', value);
+  filterStatus(value);
+});
+
+function filterStatus(status) {
+  const table = document.getElementsByClassName('table-notas')[0];
+  const rows = table.getElementsByTagName('tr');
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const columns = row.getElementsByTagName('td');
+    const column = columns[8];
+    if (column) {
+      const text = column.textContent || column.innerText;
+      console.log('Status: ', text, status)
+      if (text === status) {
+      } else {
+        row.style.display = 'none';
+      }
+    }
+  }
+}
