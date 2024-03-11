@@ -61,25 +61,21 @@ totalPagasElement.textContent = `R$ ${totalPagas.toFixed(2)}`;
 
  const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
-// chart
 window.onload = function() {
 const table = document.getElementById('tabela_notas');
 const rows = table.getElementsByTagName('tr');
 
-// Arrays para armazenar labels e valores do gráfico
 const labels = [];
 const dataInadimplencia = [];
 
-for (let i = 1; i < rows.length; i++) { // Começa em 1 para pular o cabeçalho
+for (let i = 1; i < rows.length; i++) { 
   const columns = rows[i].getElementsByTagName('td');
-  const data = columns[2].textContent.split('/'); // Data da emissão da nota
-  const month = parseInt(data[1]); // Mês da emissão da nota
-  const status = columns[8].textContent; // Status da nota
+  const data = columns[2].textContent.split('/'); 
+  const month = parseInt(data[1]);
+  const status = columns[8].textContent; 
 
-  // Adiciona o mês ao array de labels
   labels.push(month);
 
-  // Verifica o status da nota e adiciona o valor ao array de dados
   if (status === 'Pagamento em atraso') {
     dataInadimplencia.push(1);
   } else {
@@ -105,7 +101,7 @@ const options = {
     yAxes: [{
       ticks: {
         beginAtZero: true,
-        max: 1, // Limita o valor máximo do eixo Y a 1 (inadimplência total)
+        max: 1, 
       }
     }],
     xAxes: [{
@@ -124,7 +120,6 @@ const myChart = new Chart(ctx, {
   options: options
 });
 
-// grafico de receitas (baseado na data do pagamento)
 
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
@@ -172,7 +167,6 @@ new Chart(ctx2, {
 
 
 
-// Filtrar por trimestre
 function filterByTrimestre(quarter) {
   const tableBody = document.querySelector('#tabela_notas tbody');
   const rows = tableBody.getElementsByTagName('tr');

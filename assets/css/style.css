@@ -9,14 +9,6 @@ html {
 }
 
 
-/* main {
-  height: 100vh;
-  height: -webkit-fill-available;
-  max-height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
-} */
-
 
 /* oh my god */
 header {
@@ -31,7 +23,6 @@ header {
 
 
 .text-wrap.fs-6.fw-bold {
-  /* Suas propriedades de estilo aqui */
   margin-left: 7px;
 }
 
@@ -65,24 +56,15 @@ h4.font-monospace {
   margin-top: 5px !important;
 }
 
-/* .tables {
-  display: inline-flex;
-  flex-direction: row;
-} */
-
 .table-notas {
   display: block;
   width: 100%;
   margin-left: 10%S;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically (optional) */
+  justify-content: center;
+  align-items: center;
 }
 
 
-/* .table-notas {
-  margin-left: 0px;
-  margin-top: 50%;
-} */
 
 #tabela_notas {
   margin-top: 10%;

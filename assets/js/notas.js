@@ -3,14 +3,6 @@ window.onload = function() {
 };
 
 
-/* TODO:
-  1. Adicionar um evento de click no botão de adicionar nota
-  2. Ao clicar no botão de adicionar nota, abrir um modal com um formulário para adicionar uma nova nota
-  3. Adicionar um evento de click no botão de salvar nota
-  4. Ao clicar no botão de salvar nota, pegar os valores dos inputs e adicionar uma nova linha na tabela de notas
-  5. As notas serão persistidas no localStorage
-  6. As funções de filtragem estão muito parecidas, talvez não seja necessário repetir tanto código
-*/
 
 const monthEmissaoSelected = document.getElementById('month-emission');
 
